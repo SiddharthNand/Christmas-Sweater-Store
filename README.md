@@ -15,9 +15,9 @@
 ![ERD](images/Erd.png)
 
 ## Wireframes:
-![Screenshot](images/Screenshot 1.png)
-![Screenshot](images/Screenshot 2.png)
-![Screenshot](images/Screenshot 3.png) 
+![Screenshot](images/Screenshot-1.png)
+![Screenshot](images/Screenshot-2.png)
+![Screenshot](images/Screenshot-3.png) 
 
 
 ## Technologies Used: 
