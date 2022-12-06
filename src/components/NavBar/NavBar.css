@@ -1,4 +1,14 @@
 .bsNav {
     background-color: red;
-    font-size: 16px;
+    font-size: 24px;
   }
+  
+.bsNav:hover {
+    color: white;
+}
+.navbar-nav {
+  text-align: right;
+}
+.TNE {
+  color: red;
+}

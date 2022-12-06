@@ -12,14 +12,14 @@ export default function NavBar ({ user, setUser }) {
   }
 
   return (
-    <Navbar style={{ backgroundColor: 'red' }} expand="lg">
-      <Navbar.Brand href="/orders">Order History</Navbar.Brand>
+    <Navbar classname = "bsNav" style={{ backgroundColor: '#599C5D' }} expand="lg">
+      <div className='TNE'><Navbar.Brand>TNE Clothing</Navbar.Brand></div>
       <Navbar.Toggle aria-controls="navbarNav" />
       <Navbar.Collapse id="navbarNav">
         <Nav className="mr-auto">
+          <Nav.Link href="#">Welcome, {user.name}</Nav.Link>
           <Nav.Link href="/orders/new">Shop</Nav.Link>
           <Nav.Link href="/info">About Us</Nav.Link>
-          <Nav.Link href="#">Welcome, {user.name}</Nav.Link>
           <Nav.Link href="#" onClick={handleLogOut}>Log Out</Nav.Link>
         </Nav>
       </Navbar.Collapse>

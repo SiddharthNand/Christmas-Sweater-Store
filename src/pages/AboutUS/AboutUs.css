@@ -1,13 +1,15 @@
 
 .AboutUs {
     font-size: 48px;
-    color: rgb(7, 190, 59);
+    color: #599C5D;
   }
 
   .Text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
     color: aliceblue;
+    width: 75%;
+    margin: 0 auto;
   
     
   }

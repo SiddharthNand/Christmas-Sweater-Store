@@ -1,3 +1,4 @@
+import './Products.css';
 export default function ProductsPage() {
   return (
    <>
@@ -6,6 +7,7 @@ export default function ProductsPage() {
   <img src="/stylesheets/images/Option1.png" alt="three elves"/>
     </div>
   <br></br>
+  <p className='price'>$34.99</p>
   <select> 
     <option>Small</option>
     <option>Medium</option>
@@ -19,6 +21,7 @@ export default function ProductsPage() {
 <br></br> <br></br>
   <img src="/stylesheets/images/Option3.png" alt="Penguins"/>
   <br></br> <br></br>
+  <p className='price'>$34.99</p>
   <select> 
     <option>Small</option>
     <option>Medium</option>
@@ -30,6 +33,7 @@ export default function ProductsPage() {
 <br></br> <br></br>
   <img src="/stylesheets/images/Option2.png" alt="Snowman"/>
   <br></br> <br></br>
+  <p className='price'>$34.99</p>
   <select> 
     <option>Small</option>
     <option>Medium</option>
