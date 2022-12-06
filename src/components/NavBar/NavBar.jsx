@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import { Navbar, Nav } from 'react-bootstrap';
 import './NavBar.css';
