@@ -18,7 +18,8 @@ export default function NavBar ({ user, setUser }) {
       <Navbar.Collapse id="navbarNav">
         <Nav className="mr-auto">
           <Nav.Link href="#">Welcome, {user.name}</Nav.Link>
-          <Nav.Link href="/orders/new">Shop</Nav.Link>
+          <Nav.Link href="/products">Shop</Nav.Link>
+          <Nav.Link href="/orders/">Order History</Nav.Link>
           <Nav.Link href="/info">About Us</Nav.Link>
           <Nav.Link href="#" onClick={handleLogOut}>Log Out</Nav.Link>
         </Nav>
