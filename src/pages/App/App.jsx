@@ -8,6 +8,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import AboutUs from '../AboutUs/AboutUs';
 import Snowfall from "react-snowfall"
 import Footer from "../../components/Footer/footer";
+import { list } from '../../data'
 import './App.css';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
           <NavBar user={user} setUser={setUser} />
           <Routes>
             {/* Route components in here */}
-            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/products" element={<ProductsPage list ={list} />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
             <Route path="/info" element={<AboutUs />} />
           </Routes>
