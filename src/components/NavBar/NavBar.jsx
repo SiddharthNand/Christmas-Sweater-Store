@@ -22,6 +22,9 @@ export default function NavBar ({ user, setUser }) {
           <Nav.Link href="/orders/">Order History</Nav.Link>
           <Nav.Link href="/info">About Us</Nav.Link>
           <Nav.Link href="#" onClick={handleLogOut}>Log Out</Nav.Link>
+          <div className='cartt'>
+          <ion-icon name="cart-sharp"></ion-icon>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
