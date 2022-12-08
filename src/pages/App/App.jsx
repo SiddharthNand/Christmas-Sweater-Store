@@ -43,7 +43,7 @@ function App() {
           width: '100vw',
           height: '100vh',
         }}
-        snowflakeCount={100}/> */}
+        snowflakeCount={200}/> */}
           <NavBar user={user} setUser={setUser} />
           <Routes>
             {/* Route components in here */}

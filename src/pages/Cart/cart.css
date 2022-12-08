@@ -3,11 +3,11 @@
     margin: 0 auto;
 }
 
-.basketImg {
+/* .basketImg {
     padding-top: 10px;
-    width: 100px;
-    height: 100px;
-}
+    width: 150px;
+    height: 150px;
+} */
 
 h5 {
     color: aliceblue;
@@ -16,4 +16,20 @@ h5 {
 
 p {
     color: aliceblue;
+}
+
+.prime {
+    background-color: #FF9900;
+    color: black;
+}
+
+.amazon {
+    height: 38px;
+    width: 93px;
+    background-color: white;
+    transform: none;
+}
+
+.amazonB {
+    background-color: white;
 }
