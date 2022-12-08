@@ -4,7 +4,7 @@
   }
   
 .bsNav:hover {
-    color: white;
+    color: red;
 }
 .navbar-nav {
   text-align: right;
@@ -16,4 +16,8 @@
 ion-icon {
   font-size: 30px;
   
+}
+
+.right {
+  justify-content: end;
 }

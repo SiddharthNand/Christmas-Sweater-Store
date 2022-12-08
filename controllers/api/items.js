@@ -1,15 +1,14 @@
 const Item = require('../../models/cart');
 
 module.exports = {
-  index,
+  getCart,
   show,
   create,
 };
 
-async function index(req, res) {
-  const items = await Item.find({}).sort('item').populate('price').exec();
+async function getCart(req, res) {
+  const items = await Item.find({user:req.params.id})
   // re-sort based upon the sortOrder of the categories
-  items.sort((a, b) => a.category.sortOrder - b.category.sortOrder);
   res.json(items);
 }
 

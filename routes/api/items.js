@@ -7,6 +7,6 @@ const itemsCtrl = require('../../controllers/api/items');
 
 
 router.post('/:id', itemsCtrl.create)
-router.get('/:id', itemsCtrl.show);
+router.get('/:id', itemsCtrl.getCart);
 
 module.exports = router;

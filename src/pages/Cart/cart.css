@@ -1,0 +1,19 @@
+.basket {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.basketImg {
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+h5 {
+    color: aliceblue;
+
+}
+
+p {
+    color: aliceblue;
+}
