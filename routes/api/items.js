@@ -4,10 +4,9 @@ const itemsCtrl = require('../../controllers/api/items');
 
 // // GET /api/items
 // router.get('/', itemsCtrl.index);
-// // GET /api/items/:id
-// router.get('/:id', itemsCtrl.show);
+
 
 router.post('/:id', itemsCtrl.create)
-
+router.get('/:id', itemsCtrl.show);
 
 module.exports = router;

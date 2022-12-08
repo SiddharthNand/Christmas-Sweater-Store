@@ -21,5 +21,4 @@ async function show(req, res) {
 async function create (req, res) {
   const item = await Item.create(req.body)
   res.status(200).json(item)
-  console.log(profile)
 }
