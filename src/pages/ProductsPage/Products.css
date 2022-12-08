@@ -43,13 +43,13 @@ button:hover {
 img {
   width: 200px;
   height: 200px;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease;
   transform: scale(1);
 
 }
 
 img:hover {
-  transform: scale(1.75);
+  transform: scale(1.75); */
 }
  .details {
   color: white;

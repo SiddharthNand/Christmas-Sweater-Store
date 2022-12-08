@@ -6,9 +6,10 @@ import ProductsPage from '../ProductsPage/ProductsPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 import AboutUs from '../AboutUs/AboutUs';
-import Snowfall from "react-snowfall"
+// import Snowfall from "react-snowfall"
 import Footer from "../../components/Footer/footer";
 import { list } from '../../data'
+import Cart from '../Cart/cart';
 import './App.css';
 
 function App() {
@@ -19,19 +20,20 @@ function App() {
     <main className="App">
       { user ?
         <>
-        <Snowfall 
+        {/* <Snowfall 
         style={{
           position: 'fixed',
           width: '100vw',
           height: '100vh',
         }}
-        snowflakeCount={100}/>
+        snowflakeCount={100}/> */}
           <NavBar user={user} setUser={setUser} />
           <Routes>
             {/* Route components in here */}
-            <Route path="/products" element={<ProductsPage list ={list} />} />
+            <Route path="/products" element={<ProductsPage list ={list} user={user} />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
             <Route path="/info" element={<AboutUs />} />
+            <Route path={`/cart/${user._id}`} element={<Cart />} />
           </Routes>
           <br></br><br></br>
           <Footer />

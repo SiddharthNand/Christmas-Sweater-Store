@@ -12,7 +12,7 @@ export default function NavBar ({ user, setUser }) {
   }
 
   return (
-    <Navbar classname = "bsNav" style={{ backgroundColor: '#599C5D' }} expand="lg">
+    <Navbar className = "bsNav" style={{ backgroundColor: '#599C5D' }} expand="lg">
       <div className='TNE'><Navbar.Brand>TNE Clothing</Navbar.Brand></div>
       <Navbar.Toggle aria-controls="navbarNav" />
       <Navbar.Collapse id="navbarNav">
@@ -20,11 +20,11 @@ export default function NavBar ({ user, setUser }) {
           <Nav.Link href="#">Welcome, {user.name}</Nav.Link>
           <Nav.Link href="/products">Shop</Nav.Link>
           <Nav.Link href="/orders/">Order History</Nav.Link>
+          <Nav.Link href="/cart">Cart</Nav.Link>
           <Nav.Link href="/info">About Us</Nav.Link>
           <Nav.Link href="#" onClick={handleLogOut}>Log Out</Nav.Link>
-          <div className='cartt'>
-          <ion-icon name="cart-sharp"></ion-icon>
-          </div>
+          
+        
         </Nav>
       </Navbar.Collapse>
     </Navbar>
