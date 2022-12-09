@@ -1,15 +1,7 @@
 import './Products.css';
 import ProductCard from '../../components/ProductCard'
-// import { useState} from "react";
 
-
-
-// const [cart, setCart] = useState([]);
-
-
-
-
-export default function ProductsPage({list, user}) {
+export default function ProductsPage({list, user, quantity, setQuantity}) {
   const handleClick = async(item) => {
     console.log(item)
     const res = await fetch (`/cart/${user._id}`,{
@@ -18,6 +10,7 @@ export default function ProductsPage({list, user}) {
       body: JSON.stringify({item:item.item, price:item.price, img:item.img, user:user._id})
     })
     res.json()
+    setQuantity(quantity + 1)
   } 
   const productsCards = list.map((item, index ) => {
     return <ProductCard key={`${index}`} item={item} handleClick={handleClick}/>

@@ -4,6 +4,7 @@ module.exports = {
   getCart,
   show,
   create,
+  deleteProduct,
 };
 
 async function getCart(req, res) {
@@ -20,4 +21,11 @@ async function show(req, res) {
 async function create (req, res) {
   const item = await Item.create(req.body)
   res.status(200).json(item)
+}
+
+async function deleteProduct(req, res) {
+  console.log('its working')
+  const item = await Item.findByIdAndDelete(req.params.id);
+  console.log(item)
+  res.json(item);
 }
