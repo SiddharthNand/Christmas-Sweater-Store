@@ -13,7 +13,7 @@ export default function NavBar ({ user, setUser, quantity }) {
 
   return (
     <Navbar className="bsNav" style={{ backgroundColor: '#599C5D' }} expand="lg">
-    &nbsp;<div className="TNE"><Navbar.Brand style={{ color: "white"}}>TNE Clothing</Navbar.Brand></div>
+    &nbsp;<div className="TNE"><Navbar.Brand href="/products" style={{ color: "white"}}>TNE Clothing</Navbar.Brand></div>
     <Navbar.Toggle aria-controls="navbarNav" />
     <Navbar.Collapse id="navbarNav">
       <Nav className="me-auto ml-auto">
@@ -22,7 +22,7 @@ export default function NavBar ({ user, setUser, quantity }) {
         {/* <Nav.Link href="/orders/" style={{ color: "white" }}>Order History</Nav.Link> */}
         <Nav.Link href="/info" style={{ color: "white" }}>About Us</Nav.Link>
         </Nav>
-        <Nav.Link href="/cart" style={{ color: "white" }}>Cart &nbsp; <span>{quantity}</span></Nav.Link> &nbsp;&nbsp;&nbsp;
+        <Nav.Link href="/cart" style={{ color: "white" }}>Cart  <span className='count'>{quantity}</span></Nav.Link> &nbsp;&nbsp;&nbsp;
         <Nav.Link href="#" onClick={handleLogOut} style={{ color: "white" }}>Log Out</Nav.Link>&nbsp;
     </Navbar.Collapse>
   </Navbar>
