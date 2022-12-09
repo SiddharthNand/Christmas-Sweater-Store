@@ -1,16 +1,16 @@
 footer {
     padding-top: 1%;
     background-color: rgba(255, 255, 255, 0.577);
-    display: inline-flex;
+    display: block;
     width: 100%;
     color: rgb(8, 29, 0);
     text-align: center;
     justify-content: space-evenly;
-    /* position: fixed;
-    bottom: 0; */
-    }
+    position: bottom;
+    bottom: 0;
     
-a {
-    color: white;
 }
 
+a {
+    color: white;
+} 

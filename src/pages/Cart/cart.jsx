@@ -2,7 +2,7 @@ import './cart.css'
 import { useEffect } from 'react'
 
 export default function Cart({ cart, quantity, setQuantity, user, setCart}) {
-  
+
 
   const handleClick = async (item, e) => {
     e.preventDefault()
@@ -28,7 +28,7 @@ export default function Cart({ cart, quantity, setQuantity, user, setCart}) {
       )}
 
       <br></br>
-      <button>Check out</button>
+      <a href='/payment'><button>Check out</button></a>
       <br></br>
       <br></br>
 

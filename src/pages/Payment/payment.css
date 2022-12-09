@@ -1,0 +1,20 @@
+.CC{
+    color: white;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.date {
+    width: 50%;
+}
+
+.CVV {
+    width: 25%;
+}
+
+.paymentBackground {
+    background-color: rgba(65, 4, 4, 0.472);
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 10%;
+}
