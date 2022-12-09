@@ -1,17 +1,13 @@
 import './cart.css'
-import { useEffect } from 'react'
 
-export default function Cart({ cart, quantity, setQuantity, user, setCart}) {
-
+export default function Cart({ cart, quantity, setQuantity, user, setCart }) {
 
   const handleClick = async (item, e) => {
     e.preventDefault()
-    console.log(item)
     const response = await fetch(`/cart/${item._id}`, {
       method: 'DELETE'
     }).then(res => res.json())
-    console.log(response)
-   setQuantity(quantity - 1)
+    setQuantity(quantity - 1)
   }
   return (
     <>

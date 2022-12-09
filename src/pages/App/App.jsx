@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
 import ProductsPage from '../ProductsPage/ProductsPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 import AboutUs from '../AboutUs/AboutUs';
 import Snowfall from "react-snowfall"
@@ -48,9 +47,7 @@ function App() {
             snowflakeCount={200} />
           <NavBar user={user} setUser={setUser} quantity={quantity} />
           <Routes>
-            {/* Route components in here */}
             <Route path="/products" element={<ProductsPage list={list} user={user} quantity={quantity} setQuantity={setQuantity} />} />
-            <Route path="/orders" element={<OrderHistoryPage />} />
             <Route path="/info" element={<AboutUs />} />
             <Route path="/cart" element={<Cart cart={cart} setCart={setCart} user={user} quantity={quantity} setQuantity={setQuantity} />} />
             <Route path="/refund" element={<Refund />} />
@@ -60,12 +57,9 @@ function App() {
           </Routes>
           <br></br><br></br>
           <Footer />
-
         </>
         :
         <AuthPage setUser={setUser} />
-
-
       }
     </main>
   );
