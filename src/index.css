@@ -112,7 +112,7 @@ input {
   border-radius: .5vmin;
   color: var(--text-dark);
   background-image: none !important; /* prevent lastpass */
-  outline: none;
+  outline: none; 
 }
 
 input:focus {
