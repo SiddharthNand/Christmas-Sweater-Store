@@ -9,3 +9,5 @@ export default function Footer() {
   <a style={{ color: 'black' }} className='policy' href="/contact">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </footer>
 )}
+
+safgdsdf
